@@ -59,6 +59,18 @@ function flashButtonStyle1() {
 }
 
 button2.addEventListener('click', flashButtonStyle1);
+
+
+            function handleOrientationChange() {
+  if (window.innerWidth > window.innerHeight) {
+    window.location.href = "pages/landscape.html";
+  }
+}
+
+handleOrientationChange();
+
+window.addEventListener("resize", handleOrientationChange);
+window.addEventListener("orientationchange", handleOrientationChange);
         </script>
  
 </body>
